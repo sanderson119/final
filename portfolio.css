@@ -1,4 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+body {
+    
+    background: radial-gradient( #6845AA, black); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+   
+}
+
+.container {
+    /*width:1024px;*/
+    width: 90%;
+    margin:0 auto;
+    border: 3px solid #1EAE98;
+    border-radius: 15px;
+    padding:20px;
+}
+  
+
+
 
   /*Text Styles Section*/
 ul, h1, h2, h3, p {
@@ -22,12 +41,7 @@ h3 {
     font-style: italic;
 }
 
-footer {
-    line-height: 1em;
-    text-align: center;
-    
-   
-}
+
 .white {
     color:white;
 }
@@ -56,7 +70,6 @@ footer {
 
  .reason  {
     
-  
     display: inline-block;
     text-align: center;
     
@@ -65,12 +78,16 @@ footer {
  
 }
 
+
 #linkb {
     color:#e30b5d;
     text-decoration: underline;
     font-weight:bold;
     font-size: large;
 }
+
+
+
 .white p {
     color:white;
 }
@@ -103,24 +120,11 @@ label .white{
 /*end Text Styles*/
 
 
-body {
-    border: 3px solid ;
-    border-color: #1EAE98 ;
-    padding: 50px;
-    max-width: 100%;
-    border-radius: 15px;
-    font-size: 20px;
-    background: radial-gradient( #6845AA, black);
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 30px;
-    
-   
-}
-  
+
  /*Header Section*/
  header {
-    padding-bottom: 20px;
-    object-fit: scale-down; 
+    /*padding-bottom: 20px;
+    object-fit: scale-down; */
     border-radius: 15px;
     text-align: center;
   
@@ -137,7 +141,7 @@ body {
    .nav  {
         box-sizing:content-box;
         margin: 0px 15%;
-        padding:2px;
+        padding:10px;
         border-radius: 15px;
         max-width: 100%;
        
@@ -164,16 +168,40 @@ nav, ul, li {
        
     }
 
+
+.social {
+    text-align: center;
+    border: 3px solid grey;
+    margin-bottom:10px;
+    border-radius: 15px;
+    list-style: none;
+    margin-left:38%;
+ 
+    
+}
+
+
 .button {
         padding: 9px 25px;
         background:  #e30b5d;
-        border: 3px solid white;
+        border: 2px solid white;
         border-radius: 50px;
         cursor: pointer;
         transition: all, 0.3s ease 0s;
         color: white;
         
     }
+
+.button-no-border
+{
+    padding: 9px 25px;
+    background:  #e30b5d;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all, 0.3s ease 0s;
+    color: white;
+    
+}
   
 li, a, .button {
         font-family: "montserrat", sans-serif;
@@ -184,6 +212,10 @@ li, a, .button {
  
  }
 
+ main {
+     width:100%;
+
+ }
      /*End Navigation*/
 
     /*Grid Container Section*/
@@ -191,8 +223,8 @@ li, a, .button {
     display: grid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
-    margin-right:auto;
     grid-template-rows: 400px;
+   
    
     /*grid-template-columns: 90%;
     object-fit: scale-down; 
@@ -490,6 +522,19 @@ img {
       /*End Portfolio*/
    
       
+      footer {
+        line-height: 1em;
+        text-align: center;
+      
+    }
+    
+    @media only screen and (max-width: 680px) {
+        main {
+            margin-left:0;
+            width:100%;
+        }
+        
+    }
     
      
   
