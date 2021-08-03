@@ -38,11 +38,12 @@
       </nav>  
         </div>     
     </section>
-      
+      <main class="container-c">
          <div class="white">
-        <p>What has prevented you from hiring a design and brand expert in the past?</p>
+           
+        <h3>What has prevented you from hiring a design and brand expert in the past?</h3>
         <div>
-          <select name="Reasoning">
+          <select name="drop-d" >
             <option value="select">Select From Dropdown</option>
             <option value="options">Too Many Options</option>
             <option value="Money">Too Expensive</option>
@@ -54,7 +55,8 @@
       
       
           <!--Beginning of Portfolio CheckBox Voting-->
-          <h2>Which Portfolio item peaks your interest the most?:</h2><p>Found below is a survey which qill provide insight to whichprojects to apply my focus on.</p>
+          
+          <h3>Which option peaks your interest the most? Please provide insights through the survey below or through the comment section.</h3>
           <p>Select your top choice below:</p>
                 <label for="#1" class="white">Portfolio 1:</label>
                 <input type="checkbox" name="#1" id="#1">
@@ -81,25 +83,37 @@
   </div>
           <br>
             <input type="submit">
-      
             <div class="white">
-            <br>
-            <p>Questions or Comments?</p>
-            <label for="comments">Leave a comment below and we will respond within 48 hours:</label>
             
-       </div>
-       
-       <div class="white">
+            <h3 class="center">Questions or Comments?</h3>
+            <form action="/action_page.php">
+            <label for="comments">Leave a comment below and we'll do our best to respond asap!:</label>
+            <p><label for="first">First Name</label> 
+            <input type="text" id="first" name="first" placeholder="...."> </p>  
+            <label for="last">Last Name</label> 
+              <input type="text" id="last" name="last" placeholder="..."></p>       
+            <p><label for="email">Email Address</label> 
+              <input type="text" id="email" name="email" placeholder="..."></p>
+              <textarea id="details" rows="8" cols=50>Details...</textarea></p>
+              <div class="white">
            <br>
-            <textarea id="details" rows="8" cols=50>Details...</textarea>
-       </div>
-       <br>
-       <button>Submit</button>  
-       <button>Clear</button>
-       <div id="right"><a href="index.html" id="link">Back to Top</a></div>
-     
+              </div>
+            </form>
+
+       <input type="Submit">
+  
+      
+       
+      </main>
        <section>
-         <nav>
+        
+            
+          <br><div class="float-r"><a href= "contact.html" class="link">Back to Top</a>
+        </div>
+        <div class="float-l"><a href="index.html" class="link">Home</a></div>
+         
+
+
         <ul  class="social">
                       
           <li><a href="https://www.youtube.com/channel/UCUcAFC_efNobqpl9wdGhPgQ">YouTube</a></li>
@@ -109,7 +123,7 @@
       </ul>
   </nav>
        </section>   
-      </main> 
+   
 
     <!--Beginning Footer Section-->     
     <section>
@@ -117,6 +131,7 @@
       <footer>
         <div class="grid-container-foot">
           <div id="grid-footer">
+            <img src="Images/scalogosmall.png" id="footer-logo"><br>
             <p class="white">Susan C Anderson &#169; 2021 <a href="mailto:sanderson481@students.ccsnh.edu" target="_blank" class="white-foot">sanderson481@students.ccsnh.edu</a> </p>  
           </div>
         </div>
