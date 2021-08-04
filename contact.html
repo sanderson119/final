@@ -12,9 +12,9 @@
     <link href="portfolio.css" rel="stylesheet">
     
 </head>
-     <div class="container">  
+     
     <body> 
- 
+      <div class="container"> 
       <header>
         <div id="grid-container1">
           <div id="grid-header">
@@ -43,8 +43,9 @@
            
         <h3>What has prevented you from hiring a design and brand expert in the past?</h3>
         <div>
-          <select name="drop-d" >
+          <select name="dropDown">
             <option value="select">Select From Dropdown</option>
+            <option value="blank"></option>
             <option value="options">Too Many Options</option>
             <option value="Money">Too Expensive</option>
             <option value="create">Creative Control</option>
@@ -55,9 +56,12 @@
       
       
           <!--Beginning of Portfolio CheckBox Voting-->
+         
           
           <h3>Which option peaks your interest the most? Please provide insights through the survey below or through the comment section.</h3>
           <p>Select your top choice below:</p>
+          <form action="https://youtu.be/VJGUSrL63jE">
+            <div>
                 <label for="#1" class="white">Portfolio 1:</label>
                 <input type="checkbox" name="#1" id="#1">
        </div>
@@ -81,31 +85,44 @@
       <label for="#6" class="white">Portfolio 6:</label>
       <input type="checkbox" name="6" id="#6">
   </div>
-          <br>
-            <input type="submit">
-            <div class="white">
-            
-            <h3 class="center">Questions or Comments?</h3>
-            <form action="/action_page.php">
-            <label for="comments">Leave a comment below and we'll do our best to respond asap!:</label>
-            <p><label for="first">First Name</label> 
-            <input type="text" id="first" name="first" placeholder="...."> </p>  
-            <label for="last">Last Name</label> 
-              <input type="text" id="last" name="last" placeholder="..."></p>       
-            <p><label for="email">Email Address</label> 
-              <input type="text" id="email" name="email" placeholder="..."></p>
-              <textarea id="details" rows="8" cols=50>Details...</textarea></p>
-              <div class="white">
-           <br>
-              </div>
-            </form>
 
-       <input type="Submit">
+  <div><input type="submit" class="bold"   value="Submit"></div>
+          </form>
+     
+  
+  <div class="white"> 
+            
+            <h3>Questions or Comments?</h3>
+            <p>Leave a comment below and we'll do our best to respond asap!</p>
+       
+            <form action="https://wp.zybooks.com/form-viewer.php" method="get" id="contactform">
+      <div> <label for="first" >Name: </label>
+      <input type="text" id="first"  ></div>
+            
+      <div><label for="last" >&nbsp;&nbsp; Last:</label>
+      <input type="text" id="last"  ></div> 
+            
+      <div><label for="email" >&nbsp;Email:</label>
+      <input type="email" id="email"  ></div>
+            
+      <textarea id="details" rows="8" cols="30">Comments...</textarea></div>
+            
+            <div><input type="submit" class="bold" value="Submit"></div>
+          <div><label for="consent">I agree to receive emails via this email</label>
+            <input type="checkbox" id="consent"></div>
+            <br>
+      </form>
+    
+
+    <div id="errors"></div>
+            
+  </div>
+      
   
       
        
       </main>
-       <section>
+      
         
             
           <br><div class="float-r"><a href= "contact.html" class="link">Back to Top</a>
@@ -121,22 +138,22 @@
           <li><a href="https://www.instagram.com/vibrant_tenacity/">Instagram</a></li>
           
       </ul>
-  </nav>
-       </section>   
+  
+       
    
 
     <!--Beginning Footer Section-->     
-    <section>
+  
       
       <footer>
         <div class="grid-container-foot">
           <div id="grid-footer">
-            <img src="Images/scalogosmall.png" id="footer-logo"><br>
+            <img src="Images/scalogosmall.png" alt="sca design logo" id="footer-logo"><br>
             <p class="white">Susan C Anderson &#169; 2021 <a href="mailto:sanderson481@students.ccsnh.edu" target="_blank" class="white-foot">sanderson481@students.ccsnh.edu</a> </p>  
           </div>
         </div>
       </footer>
-   </section>
+ 
 
   </div>
         <script src="portfolio.js"></script>

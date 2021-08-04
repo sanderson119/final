@@ -108,9 +108,12 @@ li, a, .button {
 /*Gallery Section*/
 .container-g {
   width: 90%;
+ 
   margin: 20px auto;
   columns: 4;
   column-gap: 30px;
+ 
+
 
 
 }
@@ -124,6 +127,7 @@ li, a, .button {
   overflow: hidden;
   text-align: center;
   border-radius: 15px;
+
 
 }
 
@@ -228,7 +232,7 @@ h3 {
 {
   .container-g {
     columns: 3;
-    width: calc(100 - 40%);
+    width: calc(100);
     box-sizing: border-box;
     padding: 20px 20px 20px 0;
   }

@@ -3,17 +3,19 @@ body {
     
     background: radial-gradient( #6845AA, black); 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    
-   
+       
+}
+
+main {
+    width:100%;
 }
 
 .container {
-    /*width:1024px;*/
     width: 90%;
     margin:0 auto;
     border: 3px solid #1EAE98;
     border-radius: 15px;
-    padding:20px 20px 0px 20px;
+    padding:20px;
 }
   
   /*Text Styles */
@@ -34,9 +36,8 @@ h3 {
     font-style: italic;
 }
 
-
-.white {
-    color:white;
+.bold {
+    font-weight: bold;
 }
 
 
@@ -88,7 +89,14 @@ h3 {
 
     color:white;
     text-align:center;
+    font-size: x-large;
+    font-style: italic;
     
+}
+
+#wd {
+    font-style: normal;
+  
 }
 
 #no, #stress, #alexa, #dream {
@@ -168,14 +176,17 @@ nav, ul, li {
         
     }
 #details, input, .submit{
-    padding: 9px 25px;
+    padding: 10px 25px;
         background: white;
         border: 2px solid #e30b5d;
         border-radius: 10px;
-        cursor: pointer;
-        color: #e30b5d;
-        font-weight: bold;
-
+        color: black;
+       
+        gap:50px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        font-size:15px;
+      cursor:pointer;
 }
  
 select {
@@ -183,10 +194,10 @@ select {
         background: white;
         border: 2px solid #e30b5d;
         border-radius: 10px;
+        color:black;
+        
+        font-size: 15px;
         cursor: pointer;
-        transition: all, 0.3s ease 0s;
-        color: #e30b5d;
-        font-weight: bold;
     }
     option {
         color:black;
@@ -227,10 +238,6 @@ li, a, .button {
   
 /*End Navigation*/
 
- main {
-     width:100%;
-
- }
      
 /*Home page content*/
 .bio-image {
@@ -272,61 +279,32 @@ li, a, .button {
  }
  
 div #grid-slide1, div #grid-slide2, div #grid-slide3, div #grid-slide4 {
-     padding: 20px;
+     padding: 20px 0px 0px 20px;
  }
 
 
 .float-r {
     float:right;
 }
-   
+
+.float-l {
+    float:left;
+    
+}
+
   /*End Home Page settings*/
    
     /*Grid Container Section*/
-.grid-container {
+    .grid-container {
     display: grid;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
     grid-template-rows: 400px;
    
-   
-    /*grid-template-columns: 90%;
-    object-fit: scale-down; 
-    padding:20px;
-    grid-template-rows: 400px ;
-    margin-left: 110px;
-    margin-top:20px;
-    /*gap: 2em; */
-      
-}
 
+    }
 
-
-/*@media only screen and (max-width:550px) {}
-    .container {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.2fr 0.4fr 2.2fr 1fr;
-      grid-template-areas:
-        "header"
-        "nav"
-        "main"
-        "footer";
-    }*/
-/*.container{
-    display:grid;
-    height: 100vh;
-    grid-template-columns: 1fr ;
-    grid-template-rows: 1.5fr 0.6fr 5.2fr 1.2fr;
-    grid-template-areas:
-     "header"
-     "nav"
-     "main"
-     "footer";
-    grid-gap: 0.2rem;
-    
-  }*/
-
-
+ 
 .grid-container, p {
     color:black;
     font-size: large;
@@ -361,7 +339,7 @@ div #grid-slide1, div #grid-slide2, div #grid-slide3, div #grid-slide4 {
         width: 90%;
         margin: 20px auto;
         columns: 2;
-        column-gap: 10%;
+        column-gap: 100px;
        
       }
       
@@ -433,11 +411,8 @@ div #grid-slide1, div #grid-slide2, div #grid-slide3, div #grid-slide4 {
     height: auto; 
    margin-top: 15px;
    
-  
 
   }
-
-
   
   .bio-content {
     position: relative; 
@@ -445,22 +420,6 @@ div #grid-slide1, div #grid-slide2, div #grid-slide3, div #grid-slide4 {
   
  }
 
-/*#bio-content{
-    overflow: hidden;
- }*/
-
-
-/* #background {
-     background-image: url("Images/susan.jpg");
-     background-repeat: no-repeat;
-     background-position-x:center;
-     background-position-y: center;
-     border-radius: 30px;
-     background-size:contain;
-   
-     position:relative;
-    
- }*/
 
    /*End Bio Page*/
 
@@ -476,7 +435,7 @@ div #grid-slide1, div #grid-slide2, div #grid-slide3, div #grid-slide4 {
     float:left;
     height:250px;
     border-radius: 30px;
-    margin-left: 15px;
+ 
     margin-top: 30px; 
     margin-right: 20px;
    
@@ -502,47 +461,47 @@ img {
     
   
 /* Start Portfolio Gallery */
-    div.gallery {
-        margin: 5px;
-        float: left;
-        width: 480px;
-        padding:1em;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+div.gallery {
+    margin: 5px;
+    float: left;
+    width: 480px;
+    padding:1em;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         
-      }
+ }
       
-     
-      
-      div.gallery img {
-        width: 450px;
-        height: auto;
-        border-radius: 15px;
+         
+div.gallery img {
+    width: 450px;
+    height: auto;
+    border-radius: 15px;
        
-      }
+}
       
-      .desc {
-        padding: 15px;
-        text-align: center;
-        font-style: italic;
-        color:white;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.desc {
+    padding: 15px;
+    text-align: center;
+    font-style: italic;
+    color:white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div.postcard, div.squawk {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ecf0f1;
+    font-size: large;
+    text-align: center; 
+    padding-top: 20px;
       }
 
-      div.postcard, div.squawk {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #ecf0f1;
-        font-size: large;
-        text-align: center; 
-        padding-top: 20px;
-      }
-      #squawk {
-        max-width: 100%;
-        object-fit: scale-down;
-        border-radius:10px;
-      }
-      .desc {
-          padding-top: 20px;
-      }
+#squawk {
+    max-width: 100%;
+    object-fit: scale-down;
+    border-radius:10px;
+}
+.desc {
+    padding-top: 20px;
+}
 
       /*End Portfolio*/
    
@@ -552,76 +511,35 @@ img {
         text-align: center;
       
     }
+
+    #errors {
+        color:white;
+        font-weight: bold;
+        background-color: #e30b5d;
+        border: 2px solid white;
+        border-radius: 15px;
+        text-align: center;
+        width: 400px;
+    }
+
+    /*Media Queries*/
     
     @media only screen and (max-width: 680px) {
-        main {
+        .container-c {
             margin-left:0;
-            width:100%;
+            width:0%;
         }
         
     }
-    
-     
-   /*@media only screen and (max-width: 690px) {
-    body > #container > nav {
-        float:none;*? /*remove the float*/
-        /*width:100%; /*change from 20%*/
-
-
-/*.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-    grid-gap: 2em;
-    margin: 5px;
-    padding:2px;
-    justify-content:start;
-
-    
-    
-    }
    
-    
-
-    div.gallery {
-        margin: 5px;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        color: #ecf0f1;
-        text-align: center;
-        font-size: large;
-        width:250px;  
-        padding: 10px; 
-      }*/
-
+    @media (max-width: 480px)
+    {
+      .container-c {
+        columns: 1;
+        
+      }
+    }
     
  
 
-       
-  /* * {
-    box-sizing:content-box;
-    margin: 5px;
-    padding:2px;
-    /*border-radius: 15px;
-    max-width: 100%;
-}*/
-    
-  
-/*#content {
-    padding: 20px;
-    width:600px;
-    float:right;
-    margin:5px;
-    
-}*/
-
- /*margin-bottom:40px;
-    margin-left: 15px;
-    border-radius: 30px;
-    margin-right: 15px;
- */
-
-.float-l {
-    float:left;
-    
-
-}
 
