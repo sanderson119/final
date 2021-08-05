@@ -110,11 +110,8 @@ li, a, .button {
   width: 90%;
  
   margin: 20px auto;
-  columns: 4;
+  columns: 3;
   column-gap: 30px;
- 
-
-
 
 }
 
@@ -157,7 +154,7 @@ h3 {
 }
 
 .desc {
-  padding: 15px;
+  margin: 15px;
   text-align: center;
   font-style: italic;
   color:white;
@@ -165,13 +162,14 @@ h3 {
 
 }
 
+
 .postcard, .squawk {
  
   color: #ecf0f1;
   font-size: large;
-  text-align: center; 
-
- 
+ margin-left: 30px;
+ align-items: center;
+ object-fit: scale-down; 
   
 }
 
@@ -219,6 +217,10 @@ h3 {
 }   
    /*End Footer Section*/
 
+img {
+    text-align:center;
+}
+
    .float-r {
     float:right;
 }
@@ -251,6 +253,12 @@ h3 {
   .container-g {
     columns: 1;
     
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
   }
 }
 
@@ -315,11 +323,7 @@ h3 {
     }
   }
   
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
+
   
   .clearfix:after {
     content: "";

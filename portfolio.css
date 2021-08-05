@@ -285,11 +285,14 @@ div #grid-slide1, div #grid-slide2, div #grid-slide3, div #grid-slide4 {
 
 .float-r {
     float:right;
+    padding:20px 10px 0px 20px;
+   
+    
 }
 
 .float-l {
     float:left;
-    
+     padding:40px 20px 1px 20px;
 }
 
   /*End Home Page settings*/
@@ -339,7 +342,7 @@ div #grid-slide1, div #grid-slide2, div #grid-slide3, div #grid-slide4 {
         width: 90%;
         margin: 20px auto;
         columns: 2;
-        column-gap: 100px;
+        column-gap: 150px;
        
       }
       
@@ -403,7 +406,7 @@ div #grid-slide1, div #grid-slide2, div #grid-slide3, div #grid-slide4 {
   }
   
   .bio-bg {
-    opacity: 0.2;
+    opacity: 0.1;
     position:absolute;
     left: 0;
     top: 0;
@@ -416,11 +419,8 @@ div #grid-slide1, div #grid-slide2, div #grid-slide3, div #grid-slide4 {
   
   .bio-content {
     position: relative; 
-   
   
  }
-
-
    /*End Bio Page*/
 
 
@@ -438,8 +438,7 @@ div #grid-slide1, div #grid-slide2, div #grid-slide3, div #grid-slide4 {
  
     margin-top: 30px; 
     margin-right: 20px;
-   
-    
+      
 }
 
 .no, .dream {
@@ -524,19 +523,35 @@ div.postcard, div.squawk {
 
     /*Media Queries*/
     
-    @media only screen and (max-width: 680px) {
-        .container-c {
-            margin-left:0;
-            width:0%;
-        }
-        
+    @media (max-width: 680px)
+    {
+      .container-g {
+        columns: 3;
+        width: calc(100);
+        box-sizing: border-box;
+        padding: 20px 20px 20px 0;
+      }
     }
-   
+    
+    @media (max-width: 768px)
+    {
+      .container-g {
+        columns: 2;
+        
+      }
+    }
+    
     @media (max-width: 480px)
     {
-      .container-c {
+      .container-g {
         columns: 1;
         
+      }
+    }
+    
+    @media only screen and (max-width: 500px) {
+      .responsive {
+        width: 100%;
       }
     }
     

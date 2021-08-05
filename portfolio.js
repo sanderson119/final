@@ -29,9 +29,9 @@ email.addEventListener('focus' , function() {
 
 details.addEventListener('focus' , function() {
     if (first.value !='') {
-        this.value = 'Hello ' + first.value + '! How can I help you today?'
+        this.value = 'Hello ' + first.value + '! How can I help you today?';
     } else {
-        this.value = 'Please tell me who you are first by entering your first and last name above. Thank you!'
+        this.value = 'Please tell me who you are first by entering your first and last name above. Thank you!';
     }
 });
 
